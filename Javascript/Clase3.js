@@ -27,3 +27,31 @@ const saludarUsuario=() =>{
 const saludarUsuariosaludarUser = user =>{
     return "Hola", user;
 }
+const sumarDatos = (numeroOne, numeroTwo) =>{
+    return numeroOne+numeroTwo;
+}
+console.log(sumarDatos(1.0, '2'));
+
+//instancia de una funcion hace lo mismo
+let tres = saludarUsuario;
+console.log(tres("Pedro"));
+
+//ciclos igual 
+for(let i = 0; i < 10; i++){
+    console.log("Numero",i)
+}
+
+//Funciones (forma anterior)
+const wave = function(){
+}
+
+/*
+Funciones(arrow function)
+1) sin parametros
+2) 1 parametro
+3) 2 o mas parametros
+
+Declarar variables con let y const
+5 
+
+*/
