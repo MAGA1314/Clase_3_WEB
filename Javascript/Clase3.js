@@ -53,5 +53,5 @@ Funciones(arrow function)
 
 Declarar variables con let y const
 5 
-
 */
+//--------------------------------------------------> Primer Seguimiento
