@@ -45,13 +45,71 @@ for(let i = 0; i < 10; i++){
 const wave = function(){
 }
 
-/*
-Funciones(arrow function)
-1) sin parametros
-2) 1 parametro
-3) 2 o mas parametros
 
-Declarar variables con let y const
-5 
-*/
 //--------------------------------------------------> Primer Seguimiento
+// 1) sin parametros
+const funcionSinParametros = () => {
+    console.log("Esta es una función sin parámetros");
+  }; 
+  funcionSinParametros();
+// 2) 1 parametro
+const funcionConParametro = parametro => {
+    console.log("Esta es una funcion  de un", parametro);
+}
+  funcionConParametro("PARAMETRO");
+// 3) 2 o mas parametros
+const funcionVariosParametros = (parametro1, parametro2, parametro3, parametro4) =>{
+    console.log(parametro1, parametro2, parametro3, parametro4)
+}
+funcionVariosParametros("¡", "Hola", "Mundo", "!")
+ 
+// Declarar 5 variables con let y const
+// Declaración de variable con let (mutable)
+let variable1 = "Esta variable puede ser modificada";
+console.log(variable1);
+variable1 = "Se modificó la variable";
+console.log(variable1);
+
+let variable2 = "¿Como va todo?";
+console.log(variable2);
+variable2 = "¿Como estas?";
+console.log(variable2)
+
+let variable3 = "Buenas noches";
+console.log(variable3);
+// variable3 = ("Buenos dias");
+// console.log(variable3)
+
+// Declaración de variable con const (inmutable)
+const variableInmutable1 = "Esta variable no puede ser modificada";
+console.log(variableInmutable1);
+
+const persona = {
+    Nombre: "Miguel",
+    Apellido: "Garcia",
+    Telefono: 321
+}
+console.log(persona);
+// Esto generará un error, ya que no se puede reasignar el objeto completo
+// persona = { Nombre: "Maria", Apellido: "Zapata", Telefono: 123 };
+// Pero se pueden modificar las propiedades del objeto
+persona.Nombre = "Maria";
+persona.Apellido = "Zapata";
+persona.Telefono = 123;
+console.log(persona);
+
+
+const mensaje = "Hola, mundo";
+console.log(mensaje);
+// Se Puede trabajar con la cadena de diferentes maneras
+const mensajeModificado = mensaje.toUpperCase();
+console.log(mensajeModificado);
+
+const numeros = [1, 2, 3, 4, 5];
+console.log(numeros);
+// Esto generará un error, ya que no se puede reasignar el array completo
+// numeros = [6, 7, 8, 9, 10];
+// Pero se puede modificar los elementos del array
+numeros[0] = 6;
+numeros[1] = 7;
+console.log(numeros);
